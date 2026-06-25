@@ -33,10 +33,11 @@
 ## 📸 Скриншоты
 
 <div align="center">
-<img src="screenshots/01_home.png" width="24%" />
-<img src="screenshots/02_chat.png" width="24%" />
-<img src="screenshots/03_call.png" width="24%" />
-<img src="screenshots/04_communities.png" width="24%" />
+<img src="screenshots/01_home.png" width="19%" />
+<img src="screenshots/02_messages.png" width="19%" />
+<img src="screenshots/03_voice.png" width="19%" />
+<img src="screenshots/04_communities.png" width="19%" />
+<img src="screenshots/05_privacy.png" width="19%" />
 </div>
 
 ## 🔗 Ссылки
