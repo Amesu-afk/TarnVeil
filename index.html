@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TarnVeil — мессенджер для своих</title>
+  <meta name="description" content="TarnVeil — общение, голосовые и видеозвонки, сообщества. Установи на Android." />
+  <style>
+    :root { color-scheme: dark; --bg:#0e0e15; --surf:#16161f; --line:#262632; --brand:#7c5cff; --brand2:#9b7bff; --text:#edeef4; --mut:#9a9aab; --green:#27c06a; }
+    * { box-sizing: border-box; }
+    body {
+      margin:0; min-height:100vh; background:radial-gradient(120% 80% at 50% -10%, #1c1640 0%, var(--bg) 55%);
+      color:var(--text); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+      display:flex; flex-direction:column; align-items:center; padding:48px 20px 60px;
+    }
+    .ghost { filter:drop-shadow(0 10px 30px rgba(124,92,255,.45)); }
+    h1 { font-size:44px; font-weight:800; margin:18px 0 6px; letter-spacing:-.5px; }
+    .tag { color:var(--mut); font-size:19px; margin:0 0 30px; text-align:center; max-width:420px; }
+    .card { width:100%; max-width:440px; background:var(--surf); border:1px solid var(--line); border-radius:24px; padding:28px; }
+    .dl {
+      display:flex; align-items:center; justify-content:center; gap:10px; width:100%;
+      padding:18px; border-radius:16px; background:var(--green); color:#fff; font-size:19px; font-weight:700;
+      text-decoration:none; transition:filter .15s;
+    }
+    .dl:hover { filter:brightness(1.08); }
+    .sub { text-align:center; color:var(--mut); font-size:14px; margin-top:10px; }
+    .qr-wrap { display:flex; flex-direction:column; align-items:center; margin-top:26px; }
+    #qr { background:#fff; padding:14px; border-radius:16px; }
+    #qr img, #qr canvas { display:block; }
+    .qr-hint { color:var(--mut); font-size:13px; margin-top:10px; }
+    .steps { margin-top:28px; }
+    .steps h2 { font-size:16px; color:var(--mut); text-transform:uppercase; letter-spacing:.5px; margin:0 0 14px; }
+    .step { display:flex; gap:14px; align-items:flex-start; margin-bottom:14px; }
+    .num { flex:none; width:30px; height:30px; border-radius:50%; background:rgba(124,92,255,.18); color:var(--brand2); font-weight:700; display:grid; place-items:center; font-size:15px; }
+    .step p { margin:3px 0 0; font-size:15px; line-height:1.5; }
+    .links { margin-top:30px; display:flex; gap:22px; flex-wrap:wrap; justify-content:center; }
+    .links a { color:var(--brand2); text-decoration:none; font-size:14px; }
+    .links a:hover { text-decoration:underline; }
+    footer { color:#6a6a7e; font-size:12px; margin-top:34px; }
+  </style>
+</head>
+<body>
+  <svg class="ghost" width="84" height="84" viewBox="0 0 84 84" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M16 76 V40 a26 28 0 0 1 52 0 V76 l-8.7 9 -8.7 -9 -8.6 9 -8.7 -9 -8.6 9 Z" fill="#7c5cff"/>
+    <circle cx="33" cy="42" r="6" fill="#0e0e15"/>
+    <circle cx="51" cy="42" r="6" fill="#0e0e15"/>
+  </svg>
+  <h1>TarnVeil</h1>
+  <p class="tag">Общение, голосовые и видеозвонки, сообщества — всё в одном приложении.</p>
+
+  <div class="card">
+    <a class="dl" id="dlBtn" href="./tarnveil.apk" download>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v9.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.4l3.3 3.3V4a1 1 0 0 1 1-1Z"/><path d="M5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"/></svg>
+      Скачать для Android
+    </a>
+    <div class="sub">APK · ~5 МБ · Android 7.0+</div>
+
+    <div class="qr-wrap">
+      <div id="qr"></div>
+      <div class="qr-hint">Наведи камеру телефона на QR-код</div>
+    </div>
+
+    <div class="steps">
+      <h2>Как установить</h2>
+      <div class="step"><span class="num">1</span><p>Скачай APK и открой его. Если телефон спросит — разреши установку из этого источника.</p></div>
+      <div class="step"><span class="num">2</span><p>Play Protect может предупредить — нажми «Подробнее» → «Всё равно установить». Это нормально для приложений вне Google Play.</p></div>
+      <div class="step"><span class="num">3</span><p>Открой TarnVeil, создай аккаунт — и общайся 👻</p></div>
+    </div>
+
+    <div class="links">
+      <a href="https://tarnveil.ru" target="_blank" rel="noreferrer">Открыть в браузере</a>
+      <a href="https://tarnveil.ru/privacy.html" target="_blank" rel="noreferrer">Конфиденциальность</a>
+      <!-- <a href="https://t.me/ВАШ_КАНАЛ" target="_blank" rel="noreferrer">Telegram</a> -->
+    </div>
+  </div>
+
+  <footer>© 2026 TarnVeil</footer>
+
+  <!-- Генерация QR-кода на стороне браузера (без раскрытия кода приложения) -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+  <script>
+    // QR ведёт на эту же страницу (поделись ссылкой — человек откроет и скачает).
+    // ЗАМЕНИ на свой адрес: либо страница GitHub Pages, либо https://tarnveil.ru
+    var PAGE_URL = location.origin && location.origin.startsWith('http')
+      ? location.href.split('#')[0].split('?')[0]
+      : 'https://tarnveil.ru';
+    try {
+      new QRCode(document.getElementById('qr'), { text: PAGE_URL, width: 168, height: 168, colorDark: '#0e0e15', colorLight: '#ffffff' });
+    } catch (e) {
+      document.querySelector('.qr-wrap').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
