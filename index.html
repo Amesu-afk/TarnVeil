@@ -3,10 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TarnVeil — мессенджер для своих</title>
-  <meta name="description" content="TarnVeil — общение, голосовые и видеозвонки, сообщества. Установи на Android." />
+  <title>TarnVeil — скачать мессенджер</title>
+  <meta name="description" content="TarnVeil — мессенджер со сквозным шифрованием личной переписки, голосовыми и видеозвонками, сообществами. Windows, Android и веб-версия." />
+  <meta property="og:title" content="TarnVeil — мессенджер для своих" />
+  <meta property="og:description" content="Личные сообщения со сквозным шифрованием, звонки и сообщества. Windows, Android, браузер." />
+  <meta property="og:type" content="website" />
   <style>
-    :root { color-scheme: dark; --bg:#0e0e15; --surf:#16161f; --line:#262632; --brand:#7c5cff; --brand2:#9b7bff; --text:#edeef4; --mut:#9a9aab; --green:#27c06a; }
+    :root { color-scheme: dark; --bg:#0e0e15; --surf:#16161f; --surf2:#1c1c28; --line:#262632; --brand:#7c5cff; --brand2:#9b7bff; --text:#edeef4; --mut:#9a9aab; --green:#27c06a; --win:#3b9dff; }
     * { box-sizing: border-box; }
     body {
       margin:0; min-height:100vh; background:radial-gradient(120% 80% at 50% -10%, #1c1640 0%, var(--bg) 55%);
@@ -15,28 +18,37 @@
     }
     .ghost { filter:drop-shadow(0 10px 30px rgba(124,92,255,.45)); }
     h1 { font-size:44px; font-weight:800; margin:18px 0 6px; letter-spacing:-.5px; }
-    .tag { color:var(--mut); font-size:19px; margin:0 0 30px; text-align:center; max-width:420px; }
-    .card { width:100%; max-width:440px; background:var(--surf); border:1px solid var(--line); border-radius:24px; padding:28px; }
+    .tag { color:var(--mut); font-size:19px; margin:0 0 14px; text-align:center; max-width:440px; line-height:1.45; }
+    .ver { display:inline-flex; align-items:center; gap:8px; color:var(--mut); font-size:13px; margin-bottom:28px;
+           background:var(--surf); border:1px solid var(--line); border-radius:999px; padding:6px 14px; }
+    .ver b { color:var(--text); font-weight:600; }
+    .card { width:100%; max-width:460px; background:var(--surf); border:1px solid var(--line); border-radius:24px; padding:26px; }
     .dl {
       display:flex; align-items:center; justify-content:center; gap:10px; width:100%;
-      padding:18px; border-radius:16px; background:var(--green); color:#fff; font-size:19px; font-weight:700;
-      text-decoration:none; transition:filter .15s;
+      padding:17px; border-radius:16px; color:#fff; font-size:18px; font-weight:700;
+      text-decoration:none; transition:filter .15s, transform .15s;
     }
-    .dl:hover { filter:brightness(1.08); }
-    .sub { text-align:center; color:var(--mut); font-size:14px; margin-top:10px; }
-    .qr-wrap { display:flex; flex-direction:column; align-items:center; margin-top:26px; }
+    .dl:hover { filter:brightness(1.09); transform:translateY(-1px); }
+    .dl.android { background:var(--green); }
+    .dl.windows { background:var(--win); }
+    .sub { text-align:center; color:var(--mut); font-size:13.5px; margin:9px 0 0; }
+    .or { display:flex; align-items:center; gap:12px; color:var(--mut); font-size:12px; margin:20px 0; text-transform:uppercase; letter-spacing:.6px; }
+    .or::before, .or::after { content:''; flex:1; height:1px; background:var(--line); }
+    .qr-wrap { display:flex; flex-direction:column; align-items:center; margin-top:24px; padding-top:24px; border-top:1px solid var(--line); }
     #qr { background:#fff; padding:14px; border-radius:16px; }
     #qr img, #qr canvas { display:block; }
-    .qr-hint { color:var(--mut); font-size:13px; margin-top:10px; }
-    .steps { margin-top:28px; }
-    .steps h2 { font-size:16px; color:var(--mut); text-transform:uppercase; letter-spacing:.5px; margin:0 0 14px; }
-    .step { display:flex; gap:14px; align-items:flex-start; margin-bottom:14px; }
-    .num { flex:none; width:30px; height:30px; border-radius:50%; background:rgba(124,92,255,.18); color:var(--brand2); font-weight:700; display:grid; place-items:center; font-size:15px; }
-    .step p { margin:3px 0 0; font-size:15px; line-height:1.5; }
-    .links { margin-top:30px; display:flex; gap:22px; flex-wrap:wrap; justify-content:center; }
+    .qr-hint { color:var(--mut); font-size:13px; margin-top:10px; text-align:center; }
+    .steps { margin-top:26px; }
+    .steps h2 { font-size:13px; color:var(--mut); text-transform:uppercase; letter-spacing:.6px; margin:0 0 12px; }
+    .step { display:flex; gap:13px; align-items:flex-start; margin-bottom:12px; }
+    .num { flex:none; width:28px; height:28px; border-radius:50%; background:rgba(124,92,255,.18); color:var(--brand2); font-weight:700; display:grid; place-items:center; font-size:14px; }
+    .step p { margin:2px 0 0; font-size:14.5px; line-height:1.5; }
+    .note { margin-top:22px; padding:14px 16px; background:var(--surf2); border:1px solid var(--line); border-radius:14px; color:var(--mut); font-size:13.5px; line-height:1.55; }
+    .note b { color:var(--text); }
+    .links { margin-top:28px; display:flex; gap:20px; flex-wrap:wrap; justify-content:center; }
     .links a { color:var(--brand2); text-decoration:none; font-size:14px; }
     .links a:hover { text-decoration:underline; }
-    footer { color:#6a6a7e; font-size:12px; margin-top:34px; }
+    footer { color:#6a6a7e; font-size:12px; margin-top:32px; text-align:center; line-height:1.6; }
   </style>
 </head>
 <body>
@@ -46,49 +58,90 @@
     <circle cx="51" cy="42" r="6" fill="#0e0e15"/>
   </svg>
   <h1>TarnVeil</h1>
-  <p class="tag">Общение, голосовые и видеозвонки, сообщества — всё в одном приложении.</p>
+  <p class="tag">Личные сообщения со сквозным шифрованием, голосовые и видеозвонки, сообщества.</p>
+  <!-- Версия подставляется из последнего релиза; значение здесь — запасное, если GitHub недоступен. -->
+  <div class="ver">Версия <b id="ver">2.3.3</b></div>
 
   <div class="card">
-    <a class="dl" id="dlBtn" href="./TarnVeil.apk" download>
+    <a class="dl android" id="apkBtn" href="./TarnVeil.apk" download>
       <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v9.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.4l3.3 3.3V4a1 1 0 0 1 1-1Z"/><path d="M5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"/></svg>
       Скачать для Android
     </a>
-    <div class="sub">APK · ~5 МБ · Android 7.0+</div>
+    <p class="sub">APK · <span id="apkSize">2,8 МБ</span> · Android 7.0 и новее</p>
+
+    <div class="or">или</div>
+
+    <a class="dl windows" href="https://github.com/Amesu-afk/TarnVeil/releases/latest/download/TarnVeil-Setup.exe">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.6 10.2 4.6v6.9H3V5.6Zm8.6-1.2L21 3v8.5h-9.4V4.4ZM3 12.9h7.2v6.9L3 18.8v-5.9Zm8.6 0H21V21l-9.4-1.3v-6.8Z"/></svg>
+      Скачать для Windows
+    </a>
+    <p class="sub">
+      Установщик · <span id="setupSize">99 МБ</span> · Windows 10/11 ·
+      <a href="https://github.com/Amesu-afk/TarnVeil/releases/latest/download/TarnVeil-portable.exe" style="color:var(--brand2)">портативная версия</a>
+    </p>
 
     <div class="qr-wrap">
       <div id="qr"></div>
-      <div class="qr-hint">Наведи камеру телефона на QR-код</div>
+      <div class="qr-hint">Наведи камеру телефона на QR-код,<br />чтобы открыть эту страницу на смартфоне</div>
     </div>
 
     <div class="steps">
-      <h2>Как установить</h2>
+      <h2>Android — как установить</h2>
       <div class="step"><span class="num">1</span><p>Скачай APK и открой его. Если телефон спросит — разреши установку из этого источника.</p></div>
-      <div class="step"><span class="num">2</span><p>Play Protect может предупредить — нажми «Подробнее» → «Всё равно установить». Это нормально для приложений вне Google Play.</p></div>
+      <div class="step"><span class="num">2</span><p>Play Protect может предупредить — нажми «Подробнее» → «Всё равно установить». Это обычное дело для приложений вне Google Play.</p></div>
       <div class="step"><span class="num">3</span><p>Открой TarnVeil, создай аккаунт — и общайся 👻</p></div>
+    </div>
+
+    <div class="steps">
+      <h2>Windows — как установить</h2>
+      <div class="step"><span class="num">1</span><p>Запусти скачанный установщик. Если появится SmartScreen — «Подробнее» → «Выполнить в любом случае».</p></div>
+      <div class="step"><span class="num">2</span><p>Не хочешь устанавливать — возьми портативную версию, она запускается одним файлом.</p></div>
+    </div>
+
+    <div class="note">
+      <b>Про безопасность.</b> Личная переписка шифруется на устройстве — сервер хранит только шифротекст.
+      Если пароль забыт, доступ можно вернуть кодом восстановления; администратор сервиса тоже может
+      восстановить его по обращению — как именно, описано в
+      <a href="https://tarnveil.ru/privacy.html" style="color:var(--brand2)">политике конфиденциальности</a>.
     </div>
 
     <div class="links">
       <a href="https://tarnveil.ru" target="_blank" rel="noreferrer">Открыть в браузере</a>
+      <a href="https://github.com/Amesu-afk/TarnVeil/releases" target="_blank" rel="noreferrer">Все версии</a>
       <a href="https://tarnveil.ru/privacy.html" target="_blank" rel="noreferrer">Конфиденциальность</a>
-      <!-- <a href="https://t.me/ВАШ_КАНАЛ" target="_blank" rel="noreferrer">Telegram</a> -->
     </div>
   </div>
 
-  <footer>© 2026 TarnVeil</footer>
+  <footer>
+    © 2026 TarnVeil · учебный проект<br />
+    Официальные загрузки — только с этой страницы и с сайта tarnveil.ru
+  </footer>
 
-  <!-- Генерация QR-кода на стороне браузера (без раскрытия кода приложения) -->
   <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
   <script>
-    // QR ведёт на эту же страницу (поделись ссылкой — человек откроет и скачает).
-    // ЗАМЕНИ на свой адрес: либо страница GitHub Pages, либо https://tarnveil.ru
-    var PAGE_URL = location.origin && location.origin.startsWith('http')
+    // QR ведёт на эту же страницу: поделился ссылкой — человек открыл и скачал.
+    var PAGE_URL = location.protocol.startsWith('http')
       ? location.href.split('#')[0].split('?')[0]
-      : 'https://tarnveil.ru';
+      : 'https://amesu-afk.github.io/TarnVeil/';
     try {
       new QRCode(document.getElementById('qr'), { text: PAGE_URL, width: 168, height: 168, colorDark: '#0e0e15', colorLight: '#ffffff' });
     } catch (e) {
       document.querySelector('.qr-wrap').style.display = 'none';
     }
+
+    // Версия и размеры — из последнего релиза, чтобы страница не разъезжалась со сборками.
+    // Не получилось (нет сети, лимит API) — на странице остаются значения из разметки.
+    var MB = function (bytes) { return (bytes / 1048576).toFixed(1).replace('.', ',') + ' МБ'; };
+    fetch('https://api.github.com/repos/Amesu-afk/TarnVeil/releases/latest')
+      .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+      .then(function (rel) {
+        if (rel.tag_name) document.getElementById('ver').textContent = rel.tag_name.replace(/^v/, '');
+        (rel.assets || []).forEach(function (a) {
+          if (a.name === 'TarnVeil.apk') document.getElementById('apkSize').textContent = MB(a.size);
+          if (a.name === 'TarnVeil-Setup.exe') document.getElementById('setupSize').textContent = MB(a.size);
+        });
+      })
+      .catch(function () { /* оставляем значения по умолчанию */ });
   </script>
 </body>
 </html>
