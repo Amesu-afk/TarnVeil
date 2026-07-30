@@ -71,14 +71,11 @@
 
     <div class="or">или</div>
 
-    <a class="dl windows" href="https://github.com/Amesu-afk/TarnVeil/releases/latest/download/TarnVeil-Setup.exe">
+    <a class="dl windows" href="https://github.com/Amesu-afk/TarnVeil/releases/latest/download/TarnVeil-Tauri-Setup.exe">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.6 10.2 4.6v6.9H3V5.6Zm8.6-1.2L21 3v8.5h-9.4V4.4ZM3 12.9h7.2v6.9L3 18.8v-5.9Zm8.6 0H21V21l-9.4-1.3v-6.8Z"/></svg>
       Скачать для Windows
     </a>
-    <p class="sub">
-      Установщик · <span id="setupSize">99 МБ</span> · Windows 10/11 ·
-      <a href="https://github.com/Amesu-afk/TarnVeil/releases/latest/download/TarnVeil-portable.exe" style="color:var(--brand2)">портативная версия</a>
-    </p>
+    <p class="sub">Установщик · <span id="setupSize">6,8 МБ</span> · Windows 10 и новее</p>
 
     <div class="qr-wrap">
       <div id="qr"></div>
@@ -95,7 +92,7 @@
     <div class="steps">
       <h2>Windows — как установить</h2>
       <div class="step"><span class="num">1</span><p>Запусти скачанный установщик. Если появится SmartScreen — «Подробнее» → «Выполнить в любом случае».</p></div>
-      <div class="step"><span class="num">2</span><p>Не хочешь устанавливать — возьми портативную версию, она запускается одним файлом.</p></div>
+      <div class="step"><span class="num">2</span><p>Приложение лёгкое — 6,8 МБ: оно использует браузерный движок самой Windows, а не тащит свой. Обновления ставятся само́ по себе.</p></div>
     </div>
 
     <div class="note">
@@ -138,7 +135,7 @@
         if (rel.tag_name) document.getElementById('ver').textContent = rel.tag_name.replace(/^v/, '');
         (rel.assets || []).forEach(function (a) {
           if (a.name === 'TarnVeil.apk') document.getElementById('apkSize').textContent = MB(a.size);
-          if (a.name === 'TarnVeil-Setup.exe') document.getElementById('setupSize').textContent = MB(a.size);
+          if (a.name === 'TarnVeil-Tauri-Setup.exe') document.getElementById('setupSize').textContent = MB(a.size);
         });
       })
       .catch(function () { /* оставляем значения по умолчанию */ });

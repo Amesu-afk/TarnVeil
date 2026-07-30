@@ -4,7 +4,7 @@
 
 **Мессенджер для своих** — личные сообщения со сквозным шифрованием, голосовые и видеозвонки, сообщества. Всё в одном лёгком приложении.
 
-[![Скачать для Windows](https://img.shields.io/badge/Скачать-для%20Windows-0078d4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Amesu-afk/TarnVeil/releases/latest/download/TarnVeil-Setup.exe)
+[![Скачать для Windows](https://img.shields.io/badge/Скачать-для%20Windows-0078d4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Amesu-afk/TarnVeil/releases/latest/download/TarnVeil-Tauri-Setup.exe)
 &nbsp;
 [![Скачать для Android](https://img.shields.io/badge/Скачать-для%20Android-7c5cff?style=for-the-badge&logo=android&logoColor=white)](https://amesu-afk.github.io/TarnVeil/)
 &nbsp;
@@ -31,7 +31,7 @@
 
 ## 📥 Установка
 
-**🪟 Windows** — скачай [установщик](https://github.com/Amesu-afk/TarnVeil/releases/latest/download/TarnVeil-Setup.exe) и запусти его. Не хочешь устанавливать — есть [портативная версия](https://github.com/Amesu-afk/TarnVeil/releases/latest/download/TarnVeil-portable.exe). Если появится SmartScreen — «Подробнее» → «Выполнить в любом случае» (обычное для приложений без подписи издателя).
+**🪟 Windows** — скачай [установщик](https://github.com/Amesu-afk/TarnVeil/releases/latest/download/TarnVeil-Tauri-Setup.exe) и запусти его. Установщик лёгкий — 6,8 МБ: приложение использует браузерный движок самой Windows и обновляется само. Если появится SmartScreen — «Подробнее» → «Выполнить в любом случае» (обычное для приложений без подписи издателя).
 
 **🤖 Android** — нажми **[Скачать для Android](https://amesu-afk.github.io/TarnVeil/)**:
 1. Открой скачанный `.apk` файл.
