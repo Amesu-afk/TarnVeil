@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 1254" role="img" aria-labelledby="title desc">
+  <title id="title">TarnVeil</title>
+  <desc id="desc">Smiling purple ghost — TarnVeil logo.</desc>
+
+  <defs>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#7c35ff" stop-opacity=".22"/>
+      <stop offset=".55" stop-color="#6630dc" stop-opacity=".07"/>
+      <stop offset="1" stop-color="#5027b8" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="bodyBase" x1="398" y1="348" x2="866" y2="905" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b960e9"/>
+      <stop offset=".35" stop-color="#8042ce"/>
+      <stop offset=".7" stop-color="#44309a"/>
+      <stop offset="1" stop-color="#211650"/>
+    </linearGradient>
+
+    <radialGradient id="bodyLight" cx="0" cy="0" r="1" gradientTransform="translate(512 421) rotate(43) scale(445 470)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d783fa" stop-opacity=".52"/>
+      <stop offset=".42" stop-color="#9c51e2" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#6435bf" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="bodyShade" cx="0" cy="0" r="1" gradientTransform="translate(782 793) rotate(-136) scale(390 350)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#100c3d" stop-opacity=".54"/>
+      <stop offset=".68" stop-color="#1d1250" stop-opacity=".13"/>
+      <stop offset="1" stop-color="#3f2188" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="topRim" x1="296" y1="715" x2="882" y2="414" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c778ff"/>
+      <stop offset=".25" stop-color="#d88dff"/>
+      <stop offset=".58" stop-color="#e9aaff"/>
+      <stop offset=".82" stop-color="#d991ff"/>
+      <stop offset="1" stop-color="#b86cff"/>
+    </linearGradient>
+
+    <linearGradient id="rightRim" x1="886" y1="600" x2="825" y2="890" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7650ff" stop-opacity=".9"/>
+      <stop offset=".48" stop-color="#6242e8" stop-opacity=".7"/>
+      <stop offset=".82" stop-color="#8242ee" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#a34cff" stop-opacity=".1"/>
+    </linearGradient>
+
+    <linearGradient id="bottomGlowColor" x1="392" y1="824" x2="835" y2="874" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9554ff" stop-opacity=".78"/>
+      <stop offset=".22" stop-color="#7548f4" stop-opacity=".56"/>
+      <stop offset=".48" stop-color="#6544e8" stop-opacity=".44"/>
+      <stop offset=".74" stop-color="#7048f5" stop-opacity=".58"/>
+      <stop offset="1" stop-color="#8d50ff" stop-opacity=".76"/>
+    </linearGradient>
+
+    <linearGradient id="lowerWash" x1="0" y1="790" x2="0" y2="955" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6544df" stop-opacity="0"/>
+      <stop offset=".55" stop-color="#6847e6" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#7650ef" stop-opacity=".42"/>
+    </linearGradient>
+
+    <radialGradient id="dot" cx="35%" cy="28%" r="75%">
+      <stop offset="0" stop-color="#b96cff"/>
+      <stop offset="1" stop-color="#7540e7"/>
+    </radialGradient>
+
+    <linearGradient id="face" x1="534" y1="520" x2="646" y2="677" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#11102d"/>
+      <stop offset="1" stop-color="#171044"/>
+    </linearGradient>
+
+    <filter id="softHalo" x="-60%" y="-60%" width="220%" height="220%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+
+    <filter id="outerGlow" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 .18  0 .25 0 0 .02  0 0 1 0 .35  0 0 0 .82 0"/>
+    </filter>
+
+    <filter id="tightGlow" x="-70%" y="-70%" width="240%" height="240%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="4.5"/>
+    </filter>
+
+    <filter id="edgeBlur" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+
+    <clipPath id="ghostClip">
+      <path d="M884 550C884 415 776 306 642 306C500 306 387 414 387 550C387 632 352 683 294 709C287 712 287 719 294 723C322 735 351 737 388 737V853C388 893 408 908 429 901C455 893 472 865 493 850C507 839 525 844 534 855C550 875 551 905 558 924C566 946 590 949 611 943C650 932 673 899 697 866C710 848 724 841 742 843C768 845 781 860 789 879C799 902 819 902 834 893C864 876 886 829 886 754V604L884 550Z"/>
+    </clipPath>
+  </defs>
+
+  <g transform="translate(627 627) scale(1.35) translate(-610 -624)">
+  <ellipse cx="630" cy="632" rx="430" ry="422" fill="url(#halo)" filter="url(#softHalo)"/>
+
+  <g filter="url(#outerGlow)" opacity=".76">
+    <circle cx="790" cy="550" r="15" fill="#8d48ff"/>
+    <circle cx="837" cy="550" r="15" fill="#8d48ff"/>
+  </g>
+
+  <path d="M884 550C884 415 776 306 642 306C500 306 387 414 387 550C387 632 352 683 294 709C287 712 287 719 294 723C322 735 351 737 388 737V853C388 893 408 908 429 901C455 893 472 865 493 850C507 839 525 844 534 855C550 875 551 905 558 924C566 946 590 949 611 943C650 932 673 899 697 866C710 848 724 841 742 843C768 845 781 860 789 879C799 902 819 902 834 893C864 876 886 829 886 754V604L884 550Z" fill="url(#bodyBase)"/>
+
+  <g clip-path="url(#ghostClip)">
+    <rect x="270" y="285" width="640" height="680" fill="url(#bodyLight)"/>
+    <rect x="270" y="285" width="640" height="680" fill="url(#bodyShade)"/>
+    <rect x="270" y="775" width="640" height="190" fill="url(#lowerWash)"/>
+  </g>
+
+  <g clip-path="url(#ghostClip)">
+    <path d="M294 716C352 690 387 632 387 550C387 414 500 306 642 306C776 306 884 415 884 550" fill="none" stroke="#a64fff" stroke-width="44" stroke-linecap="round" opacity=".2" filter="url(#edgeBlur)"/>
+    <path d="M294 716C352 690 387 632 387 550C387 414 500 306 642 306C776 306 884 415 884 550" fill="none" stroke="url(#topRim)" stroke-width="28" stroke-linecap="round" opacity=".88"/>
+    <path d="M294 716C352 690 387 632 387 550C387 414 500 306 642 306C776 306 884 415 884 550" fill="none" stroke="#efb4ff" stroke-width="6" stroke-linecap="round" opacity=".22"/>
+
+    <path d="M886 604V754C886 829 864 876 834 893" fill="none" stroke="#633dff" stroke-width="42" stroke-linecap="round" opacity=".22" filter="url(#edgeBlur)"/>
+    <path d="M886 604V754C886 829 864 876 834 893" fill="none" stroke="url(#rightRim)" stroke-width="24" stroke-linecap="round" opacity=".74"/>
+
+    <path d="M388 788V853C388 893 408 908 429 901C455 893 472 865 493 850C507 839 525 844 534 855C550 875 551 905 558 924C566 946 590 949 611 943C650 932 673 899 697 866C710 848 724 841 742 843C768 845 781 860 789 879C799 902 819 902 834 893" fill="none" stroke="url(#bottomGlowColor)" stroke-width="56" stroke-linecap="round" stroke-linejoin="round" opacity=".78" filter="url(#edgeBlur)"/>
+    <path d="M388 823V853C388 893 408 908 429 901C455 893 472 865 493 850C507 839 525 844 534 855C550 875 551 905 558 924C566 946 590 949 611 943C650 932 673 899 697 866C710 848 724 841 742 843C768 845 781 860 789 879C799 902 819 902 834 893" fill="none" stroke="url(#bottomGlowColor)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity=".58"/>
+  </g>
+
+  <g filter="url(#tightGlow)" opacity=".58">
+    <circle cx="790" cy="550" r="13" fill="#9851ff"/>
+    <circle cx="837" cy="550" r="13" fill="#9851ff"/>
+  </g>
+  <circle cx="790" cy="550" r="13" fill="url(#dot)" stroke="#ad69ff" stroke-width="1.5"/>
+  <circle cx="837" cy="550" r="13" fill="url(#dot)" stroke="#ad69ff" stroke-width="1.5"/>
+
+  <g>
+    <rect x="517" y="518" width="50" height="87" rx="25" fill="url(#face)" stroke="#6b42c9" stroke-width="2"/>
+    <rect x="676" y="518" width="50" height="87" rx="25" fill="url(#face)" stroke="#6b42c9" stroke-width="2"/>
+    <path d="M590 626C609 635 634 636 653 626C661 622 666 628 663 637C656 656 639 666 621 666C602 666 586 655 580 638C576 627 582 622 590 626Z" fill="url(#face)" stroke="#6540bf" stroke-width="2"/>
+  </g>
+  </g>
+</svg>
