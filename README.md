@@ -78,5 +78,5 @@
 ---
 
 <div align="center">
-<sub>© 2026 TarnVeil · учебный проект</sub>
+<sub>© 2026 TarnVeil · учебный проект · <a href="LICENSE">условия использования</a></sub>
 </div>
