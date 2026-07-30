@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="banner.png" alt="TarnVeil — мессенджер со сквозным шифрованием" width="100%" />
+
 # 👻 TarnVeil
 
 **Мессенджер для своих** — личные сообщения со сквозным шифрованием, голосовые и видеозвонки, сообщества. Всё в одном лёгком приложении.
@@ -56,11 +58,14 @@
 ## 📸 Скриншоты
 
 <div align="center">
-<img src="screenshots/01_home.png" width="19%" />
-<img src="screenshots/02_messages.png" width="19%" />
-<img src="screenshots/03_voice.png" width="19%" />
-<img src="screenshots/04_communities.png" width="19%" />
-<img src="screenshots/05_privacy.png" width="19%" />
+
+<img src="screenshots/01_home.png" width="32%" />
+<img src="screenshots/02_messages.png" width="32%" />
+<img src="screenshots/04_communities.png" width="32%" />
+
+<img src="screenshots/03_voice.png" width="32%" />
+<img src="screenshots/05_privacy.png" width="32%" />
+
 </div>
 
 ## 🔗 Ссылки
