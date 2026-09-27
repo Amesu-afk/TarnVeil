@@ -58,6 +58,13 @@
 - Официальные загрузки — эта страница, сайт [tarnveil.ru](https://tarnveil.ru), а также темы на [4PDA](https://4pda.to/forum/index.php?showtopic=1123988) и [Trashbox](https://trashbox.ru/topics/213245/tarnveil). APK при желании можно проверить через VirusTotal, а SHA-256 каждой сборки указан в [Releases](https://github.com/Amesu-afk/TarnVeil/releases).
 - 🔒 [Политика конфиденциальности](https://tarnveil.ru/privacy.html)
 
+## 🧩 Открытый код
+
+Исходники самого мессенджера закрыты, но две самые нетривиальные его части вынесены в открытые репозитории под Apache-2.0:
+
+- **[tarnmedia](https://github.com/Amesu-afk/tarnmedia)** — медиасервер (WebRTC SFU на Go и Pion), через который идут все звонки и голосовые комнаты TarnVeil. Около 1 500 строк — его реально прочитать целиком.
+- **[tarnveil-denoise](https://github.com/Amesu-afk/tarnveil-denoise)** — нейросетевой шумодав микрофона для браузера, модель обучена с нуля. Послушать «до» и «после» на живой записи: [демо на сайте](https://tarnveil.ru/keyboard-noise-demo.html).
+
 ## 📸 Скриншоты
 
 <div align="center">
@@ -76,6 +83,7 @@
 - 🌐 Сайт и веб-версия: [tarnveil.ru](https://tarnveil.ru)
 - 📥 Страница загрузки: [amesu-afk.github.io/TarnVeil](https://amesu-afk.github.io/TarnVeil/)
 - 📦 Все сборки и что нового: [Releases](https://github.com/Amesu-afk/TarnVeil/releases)
+- 🧩 Открытые части: [tarnmedia](https://github.com/Amesu-afk/tarnmedia) (медиасервер) · [tarnveil-denoise](https://github.com/Amesu-afk/tarnveil-denoise) (шумодав)
 - 📱 Тема на [4PDA](https://4pda.to/forum/index.php?showtopic=1123988) · страница на [Trashbox](https://trashbox.ru/topics/213245/tarnveil)
 - 🔒 [Политика конфиденциальности](https://tarnveil.ru/privacy.html)
 
