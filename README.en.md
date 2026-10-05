@@ -26,7 +26,7 @@
 - 🏘️ Communities with discussions, voice rooms, roles and moderation
 - 🎧 Voice and video calls — one-on-one or the whole group: a call started from a group chat rings every member at once
 - 🌐 Spatial audio rooms — how loud someone is depends on where they "stand"
-- 🔇 **Our own noise suppression** — on desktop it removes mouse and keyboard clicks even while you talk, entirely on the device (on phones the system handles audio)
+- 🔇 **Our own noise suppression** — on desktop it reduces noise, including mouse and keyboard clicks, entirely on the device. Clicks over speech may remain; results depend on the microphone and environment. On phones the system handles audio
 - 🎙️ Voice messages and round video messages
 - 🧵 Discussions and threads inside communities
 - 😀 Reactions, replies and pinned messages; select several messages at once to copy, forward or delete them
@@ -66,8 +66,8 @@ The interface is available in Russian and English and follows your system langua
 
 The messenger's own source code is closed, but its two least ordinary parts are published as separate repositories under Apache-2.0:
 
-- **[tarnmedia](https://github.com/Amesu-afk/tarnmedia)** — the media server (a WebRTC SFU in Go on top of Pion) that carries every TarnVeil call and voice room. About 1,500 lines — short enough to actually read in full.
-- **[tarnveil-denoise](https://github.com/Amesu-afk/tarnveil-denoise)** — neural microphone noise suppression for the browser, with a model trained from scratch. Hear the before and after on a real recording: [demo](https://tarnveil.ru/en/remove-keyboard-noise.html).
+- **[tarnmedia](https://github.com/Amesu-afk/tarnmedia)** — the media server (a WebRTC SFU in Go on top of Pion) that carries every TarnVeil call and voice room. A small server with documented architecture and limitations.
+- **[tarnveil-denoise](https://github.com/Amesu-afk/tarnveil-denoise)** — neural microphone noise suppression for the browser, with a model trained from scratch. Includes a compiled package installable from GitHub and a runnable recorder example. Hear model v54 on mixed, separately recorded speech and keyboard clicks: [demo](https://tarnveil.ru/en/remove-keyboard-noise.html).
 
 ## 📸 Screenshots
 
