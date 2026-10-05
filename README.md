@@ -65,7 +65,7 @@
 Исходники самого мессенджера закрыты, но две самые нетривиальные его части вынесены в открытые репозитории под Apache-2.0:
 
 - **[tarnmedia](https://github.com/Amesu-afk/tarnmedia)** — медиасервер (WebRTC SFU на Go и Pion), через который идут все звонки и голосовые комнаты TarnVeil. Небольшой сервер с описанием архитектуры и ограничений.
-- **[tarnveil-denoise](https://github.com/Amesu-afk/tarnveil-denoise)** — нейросетевой шумодав микрофона для браузера, модель обучена с нуля. Есть готовый пакет для установки из GitHub и запускаемый пример. Послушать модель v54 на смеси отдельно записанных речи и щелчков: [демо на сайте](https://tarnveil.ru/keyboard-noise-demo.html).
+- **[tarnveil-denoise](https://github.com/Amesu-afk/tarnveil-denoise)** — нейросетевой шумодав микрофона для браузера, модель обучена с нуля. Есть готовый [пакет npm](https://www.npmjs.com/package/tarnveil-denoise) (`npm install tarnveil-denoise`) и запускаемый пример. Послушать модель v54 на смеси отдельно записанных речи и щелчков: [демо на сайте](https://tarnveil.ru/keyboard-noise-demo.html).
 
 ## 📸 Скриншоты
 

@@ -67,7 +67,7 @@ The interface is available in Russian and English and follows your system langua
 The messenger's own source code is closed, but its two least ordinary parts are published as separate repositories under Apache-2.0:
 
 - **[tarnmedia](https://github.com/Amesu-afk/tarnmedia)** — the media server (a WebRTC SFU in Go on top of Pion) that carries every TarnVeil call and voice room. A small server with documented architecture and limitations.
-- **[tarnveil-denoise](https://github.com/Amesu-afk/tarnveil-denoise)** — neural microphone noise suppression for the browser, with a model trained from scratch. Includes a compiled package installable from GitHub and a runnable recorder example. Hear model v54 on mixed, separately recorded speech and keyboard clicks: [demo](https://tarnveil.ru/en/remove-keyboard-noise.html).
+- **[tarnveil-denoise](https://github.com/Amesu-afk/tarnveil-denoise)** — neural microphone noise suppression for the browser, with a model trained from scratch. Includes a compiled [npm package](https://www.npmjs.com/package/tarnveil-denoise) (`npm install tarnveil-denoise`) and a runnable recorder example. Hear model v54 on mixed, separately recorded speech and keyboard clicks: [demo](https://tarnveil.ru/en/remove-keyboard-noise.html).
 
 ## 📸 Screenshots
 
