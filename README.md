@@ -4,9 +4,9 @@
 
 <img src="banner.png" alt="TarnVeil — мессенджер со сквозным шифрованием" width="100%" />
 
-# 👻 TarnVeil
+# TarnVeil
 
-**Мессенджер для своих** — личные сообщения со сквозным шифрованием, голосовые и видеозвонки, сообщества. Всё в одном лёгком приложении.
+**Переписка, звонки и сообщества для друзей и команд.** Общайтесь в личных и групповых чатах, собирайтесь в голосовых комнатах и созванивайтесь по видео на Windows, Android и в браузере.
 
 [![Скачать для Windows](https://img.shields.io/badge/Скачать-для%20Windows-0078d4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Amesu-afk/TarnVeil/releases/latest/download/TarnVeil-Tauri-Setup.exe)
 &nbsp;
@@ -19,6 +19,19 @@
 </div>
 
 ---
+
+## 📸 Скриншоты
+
+<div align="center">
+
+<img src="screenshots/01_home.png" width="32%" />
+<img src="screenshots/02_messages.png" width="32%" />
+<img src="screenshots/04_communities.png" width="32%" />
+
+<img src="screenshots/03_voice.png" width="32%" />
+<img src="screenshots/05_privacy.png" width="32%" />
+
+</div>
 
 ## ✨ Возможности
 
@@ -62,23 +75,10 @@
 
 ## 🧩 Открытый код
 
-Исходники самого мессенджера закрыты, но две самые нетривиальные его части вынесены в открытые репозитории под Apache-2.0:
+Медиасервер и браузерное шумоподавление TarnVeil доступны как самостоятельные компоненты под Apache-2.0. В репозиториях есть документация и примеры подключения. Исходный код самого мессенджера не публикуется.
 
-- **[tarnmedia](https://github.com/Amesu-afk/tarnmedia)** — медиасервер (WebRTC SFU на Go и Pion), через который идут все звонки и голосовые комнаты TarnVeil. Небольшой сервер с описанием архитектуры и ограничений.
-- **[tarnveil-denoise](https://github.com/Amesu-afk/tarnveil-denoise)** — нейросетевой шумодав микрофона для браузера, модель обучена с нуля. Есть готовый [пакет npm](https://www.npmjs.com/package/tarnveil-denoise) (`npm install tarnveil-denoise`) и запускаемый пример. Послушать модель v54 на смеси отдельно записанных речи и щелчков: [демо на сайте](https://tarnveil.ru/keyboard-noise-demo.html).
-
-## 📸 Скриншоты
-
-<div align="center">
-
-<img src="screenshots/01_home.png" width="32%" />
-<img src="screenshots/02_messages.png" width="32%" />
-<img src="screenshots/04_communities.png" width="32%" />
-
-<img src="screenshots/03_voice.png" width="32%" />
-<img src="screenshots/05_privacy.png" width="32%" />
-
-</div>
+- **[tarnmedia](https://github.com/Amesu-afk/tarnmedia)** — медиасервер (WebRTC SFU на Go и Pion), через который идут все звонки и голосовые комнаты TarnVeil. В репозитории описаны развёртывание, архитектура и текущие ограничения.
+- **[tarnveil-denoise](https://github.com/Amesu-afk/tarnveil-denoise)** — шумоподавление микрофона для браузерных приложений с обработкой звука на устройстве. Есть готовый [пакет npm](https://www.npmjs.com/package/tarnveil-denoise) (`npm install tarnveil-denoise`) и запускаемый пример. Послушать модель v54 на смеси отдельно записанных речи и щелчков: [демо на сайте](https://tarnveil.ru/keyboard-noise-demo.html).
 
 ## 🔗 Ссылки
 
@@ -92,5 +92,5 @@
 ---
 
 <div align="center">
-<sub>© 2026 TarnVeil · учебный проект · <a href="LICENSE">условия использования</a></sub>
+<sub>© 2026 TarnVeil · <a href="LICENSE">условия использования</a></sub>
 </div>

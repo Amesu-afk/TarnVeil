@@ -6,7 +6,7 @@
 
 # TarnVeil
 
-**A messenger for your own people** — end-to-end encrypted direct messages, voice and video calls, communities. One lightweight app.
+**Messaging, calls and communities for friends and teams.** Stay in touch through direct and group chats, voice rooms and video calls on Windows, Android and the web.
 
 [![Download for Windows](https://img.shields.io/badge/Download-for%20Windows-0078d4?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Amesu-afk/TarnVeil/releases/latest/download/TarnVeil-Tauri-Setup.exe)
 &nbsp;
@@ -19,6 +19,19 @@
 </div>
 
 ---
+
+## 📸 Screenshots
+
+<div align="center">
+
+<img src="screenshots/01_home.png" width="32%" />
+<img src="screenshots/02_messages.png" width="32%" />
+<img src="screenshots/04_communities.png" width="32%" />
+
+<img src="screenshots/03_voice.png" width="32%" />
+<img src="screenshots/05_privacy.png" width="32%" />
+
+</div>
 
 ## ✨ Features
 
@@ -64,23 +77,10 @@ The interface is available in Russian and English and follows your system langua
 
 ## 🧩 Open source
 
-The messenger's own source code is closed, but its two least ordinary parts are published as separate repositories under Apache-2.0:
+TarnVeil's media server and browser noise suppression are available as standalone components under Apache-2.0. Both include documentation and integration examples. The messenger's application source code is not published.
 
-- **[tarnmedia](https://github.com/Amesu-afk/tarnmedia)** — the media server (a WebRTC SFU in Go on top of Pion) that carries every TarnVeil call and voice room. A small server with documented architecture and limitations.
-- **[tarnveil-denoise](https://github.com/Amesu-afk/tarnveil-denoise)** — neural microphone noise suppression for the browser, with a model trained from scratch. Includes a compiled [npm package](https://www.npmjs.com/package/tarnveil-denoise) (`npm install tarnveil-denoise`) and a runnable recorder example. Hear model v54 on mixed, separately recorded speech and keyboard clicks: [demo](https://tarnveil.ru/en/remove-keyboard-noise.html).
-
-## 📸 Screenshots
-
-<div align="center">
-
-<img src="screenshots/01_home.png" width="32%" />
-<img src="screenshots/02_messages.png" width="32%" />
-<img src="screenshots/04_communities.png" width="32%" />
-
-<img src="screenshots/03_voice.png" width="32%" />
-<img src="screenshots/05_privacy.png" width="32%" />
-
-</div>
+- **[tarnmedia](https://github.com/Amesu-afk/tarnmedia)** — the media server (a WebRTC SFU in Go on top of Pion) that carries every TarnVeil call and voice room. Includes deployment instructions, architecture documentation and known limitations.
+- **[tarnveil-denoise](https://github.com/Amesu-afk/tarnveil-denoise)** — on-device microphone noise suppression for browser applications. Includes a compiled [npm package](https://www.npmjs.com/package/tarnveil-denoise) (`npm install tarnveil-denoise`) and a runnable recorder example. Hear model v54 on mixed, separately recorded speech and keyboard clicks: [demo](https://tarnveil.ru/en/remove-keyboard-noise.html).
 
 ## 🔗 Links
 
@@ -93,5 +93,5 @@ The messenger's own source code is closed, but its two least ordinary parts are 
 ---
 
 <div align="center">
-<sub>© 2026 TarnVeil · a learning project · <a href="LICENSE">terms of use</a></sub>
+<sub>© 2026 TarnVeil · <a href="LICENSE">terms of use</a></sub>
 </div>
